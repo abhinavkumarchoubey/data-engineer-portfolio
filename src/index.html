@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav Kumar — Data Engineer</title>
+  <meta name="description" content="Abhinav Kumar, data engineer specializing in ETL/ELT pipelines, warehouse architecture, and data quality. Based in Bengaluru, India.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!--#include partials/header.html-->
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__text">
+        <p class="mono-label">-- data engineer / bengaluru, india</p>
+        <h1 class="hero__name">Abhinav Kumar</h1>
+        <p class="hero__role">I build pipelines that don't wake anyone up at 3am.</p>
+        <p class="hero__summary">
+          Three years turning messy healthcare claims data into warehouses people
+          actually trust — SSIS to dbt, stored procedures to orchestrated DAGs.
+          Fluent in finding the row that broke the load before it becomes an incident.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="./assets/resume/Abhinav_Kumar_Resume.pdf" download>Download résumé</a>
+          <a class="btn btn--ghost" href="#projects">View projects</a>
+        </div>
+      </div>
+
+      <div class="hero__diagram" aria-hidden="true">
+        <svg id="er-diagram" viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg">
+          <!-- connecting lines drawn in, animated via JS/CSS -->
+          <g class="er-lines" stroke="currentColor" stroke-width="1.2" fill="none">
+            <path class="er-line" d="M230 210 L230 60" />
+            <path class="er-line" d="M230 210 L370 130" />
+            <path class="er-line" d="M230 210 L370 300" />
+            <path class="er-line" d="M230 210 L230 360" />
+            <path class="er-line" d="M230 210 L90 300" />
+            <path class="er-line" d="M230 210 L90 130" />
+          </g>
+          <g class="er-nodes">
+            <g class="er-node er-node--core" transform="translate(230,210)">
+              <rect x="-58" y="-24" width="116" height="48" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">abhinav_kumar</text>
+            </g>
+            <g class="er-node" transform="translate(230,60)">
+              <rect x="-52" y="-19" width="104" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">etl / elt</text>
+            </g>
+            <g class="er-node" transform="translate(370,130)">
+              <rect x="-56" y="-19" width="112" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">warehousing</text>
+            </g>
+            <g class="er-node" transform="translate(370,300)">
+              <rect x="-58" y="-19" width="116" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">data quality</text>
+            </g>
+            <g class="er-node" transform="translate(230,360)">
+              <rect x="-50" y="-19" width="100" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">cloud</text>
+            </g>
+            <g class="er-node" transform="translate(90,300)">
+              <rect x="-54" y="-19" width="108" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">mentoring</text>
+            </g>
+            <g class="er-node" transform="translate(90,130)">
+              <rect x="-58" y="-19" width="116" height="38" rx="3"/>
+              <text x="0" y="5" text-anchor="middle">orchestration</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__photo">
+        <img src="./assets/img/headshot.jpg" alt="Portrait of Abhinav Kumar" width="720" height="720" loading="eager">
+      </div>
+      <div class="about__text">
+        <p class="mono-label">-- about</p>
+        <p>
+          I'm a database developer turned data engineer, currently building and
+          maintaining production ETL pipelines for a healthcare analytics platform.
+          I care about the boring, load-bearing parts of data work — validation
+          before load, reconciliation after, and pipelines that fail loudly instead
+          of silently corrupting a report someone's making decisions from.
+        </p>
+        <p>
+          Outside of pipelines: guitar and harmonica, cricket, badminton, and
+          enough esports to know what a real deadline pressure feels like.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <p class="mono-label">-- experience</p>
+      <article class="job">
+        <div class="job__head">
+          <div>
+            <h2>Data Engineer / Database Developer</h2>
+            <p class="job__company">Mirra Healthcare · Bengaluru, India</p>
+          </div>
+          <p class="job__dates">Sep 2023 — Present</p>
+        </div>
+        <ul class="job__list">
+          <li>Designed and maintain SSIS-based ETL pipelines moving daily claims data across 6 client databases on a shared schema, keeping downstream reporting consistently on time.</li>
+          <li>Automated a manual claims import process, cutting <span class="stat">8 hrs/week</span> of manual effort and the errors that came with it.</li>
+          <li>Rewrote a critical stored procedure from 3.5 hours down to under 30 minutes — a <span class="stat">86% reduction</span> in execution time.</li>
+          <li>Added pre-load validation (row-count reconciliation, balance checks, duplicate detection), cutting data quality incidents by roughly <span class="stat">40%</span>.</li>
+          <li>Build and maintain <span class="stat">5 production pipelines</span> (3 independently developed) running daily batch loads across multiple healthcare clients.</li>
+          <li>Reviewed <span class="stat">70+ pull requests</span> over the past year and shipped changes through CI/CD.</li>
+          <li>Mentor two junior developers on T-SQL, stored procedure design, and SSIS practices.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="projects" id="projects">
+      <p class="mono-label">-- projects</p>
+
+      <article class="project">
+        <div class="project__flow" aria-hidden="true">
+          <span class="flow-stage flow-stage--bronze">bronze</span>
+          <span class="flow-arrow"></span>
+          <span class="flow-stage flow-stage--silver">silver</span>
+          <span class="flow-arrow"></span>
+          <span class="flow-stage flow-stage--gold">gold</span>
+        </div>
+        <h2>Walmart Data Pipeline</h2>
+        <p>
+          End-to-end ETL pipeline ingesting retail transactional data from
+          PostgreSQL via CDC into Databricks, moving it through a full medallion
+          architecture (bronze → silver_technical → silver_business → gold) and
+          tracking slowly-changing dimensions with dbt snapshots.
+        </p>
+        <ul class="project__bullets">
+          <li>Incremental loading across six source tables using dbt's <code>incremental</code> materialization with timestamp-based change detection — no full refreshes.</li>
+          <li>A wide One-Big-Table model built with Jinja templating, dynamically generating a six-table join from a config dict instead of hand-written SQL.</li>
+          <li>SCD Type 2 dimensions (customers, orders, products) via dbt snapshots, capturing full row-level history.</li>
+          <li>A 10-task Airflow DAG on the TaskFlow API — CDC polling via the Databricks SDK, dbt runs segmented by layer, quality tests set to warn rather than block.</li>
+        </ul>
+        <div class="project__tags">
+          <span>Apache Airflow 3.3</span><span>dbt-core 1.12</span><span>Databricks / Unity Catalog</span><span>PostgreSQL</span><span>CeleryExecutor</span><span>Docker Compose</span>
+        </div>
+        <a class="project__link" href="https://github.com/abhinavkumarchoubey/Walmart_Project" target="_blank" rel="noopener">View repository</a>
+      </article>
+
+      <article class="project">
+        <div class="project__flow" aria-hidden="true">
+          <span class="flow-stage flow-stage--oltp">oltp</span>
+          <span class="flow-arrow"></span>
+          <span class="flow-stage flow-stage--star">star schema</span>
+        </div>
+        <h2>OLTP-to-Star Data Warehouse</h2>
+        <p>
+          Transforms the normalized Pagila DVD-rental dataset into an
+          analytics-ready star schema, built with dbt and PostgreSQL and
+          containerized for a clean local setup.
+        </p>
+        <ul class="project__bullets">
+          <li>Reusable staging views and dimension tables for customers, films, stores, staff, and dates, plus a rental fact table with revenue and duration metrics.</li>
+          <li>SCD Type 2 snapshots on customer and address records for longitudinal history.</li>
+          <li>dbt tests for primary-key uniqueness, nullability, and referential integrity.</li>
+        </ul>
+        <div class="project__tags">
+          <span>PostgreSQL</span><span>dbt</span><span>Docker</span><span>Git</span>
+        </div>
+        <a class="project__link" href="https://github.com/abhinavkumarchoubey/OLTP-TO-STAR" target="_blank" rel="noopener">View repository</a>
+      </article>
+    </section>
+
+    <section class="skills" id="skills">
+      <p class="mono-label">-- skills</p>
+      <div class="schema">
+        <div class="schema__table">
+          <p class="schema__name">etl_elt</p>
+          <p class="schema__cols">SSIS, Apache Airflow, dbt, CDC-based ingestion, incremental loading, batch orchestration, medallion architecture</p>
+        </div>
+        <div class="schema__table">
+          <p class="schema__name">databases_and_warehousing</p>
+          <p class="schema__cols">SQL Server, PostgreSQL, Databricks SQL / Unity Catalog, BigQuery, star schema, fact/dimension modeling, SCD Type 2, One-Big-Table</p>
+        </div>
+        <div class="schema__table">
+          <p class="schema__name">data_quality</p>
+          <p class="schema__cols">pre-load validation, row-count reconciliation, balance checks, duplicate detection, dbt schema tests, singular tests</p>
+        </div>
+        <div class="schema__table">
+          <p class="schema__name">cloud_platforms</p>
+          <p class="schema__cols">AWS — IAM, EC2, S3, Glue, Crawlers, Athena; Azure</p>
+        </div>
+        <div class="schema__table">
+          <p class="schema__name">reporting_and_tooling</p>
+          <p class="schema__cols">SSRS, ad-hoc reporting, TFS, CI/CD, Git / GitHub, Docker / Docker Compose, SSMS, VS Code</p>
+        </div>
+        <div class="schema__table">
+          <p class="schema__name">collaboration</p>
+          <p class="schema__cols">code review, mentoring junior developers, cross-team reporting support</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <p class="mono-label">-- education</p>
+      <div class="education__row">
+        <div>
+          <h2>B.Tech, Computer Science &amp; Engineering</h2>
+          <p class="job__company">Arka Jain University (JGI) · Jamshedpur, India</p>
+        </div>
+        <p class="job__dates">2018 — 2022 · GPA 8.4/10</p>
+      </div>
+    </section>
+  </main>
+
+  <!--#include partials/footer.html-->
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

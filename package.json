@@ -1,0 +1,7 @@
+{
+  "name": "abhinav-data-engineer-portfolio",
+  "private": true,
+  "scripts": {
+    "build": "node build.js"
+  }
+}
